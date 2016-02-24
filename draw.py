@@ -12,23 +12,23 @@ def draw_line( screen, x0, y0, x1, y1, color ):
             if (slope < 1):
                 if (x0 < x1):
                     draw_oct1(screen, x0, y0, x1, y1,color)
-                else:
+                else: #oct5
                     draw_oct1(screen, x1, y1, x0, y0,color)
             else:
                 if (x0 < x1):
                     draw_oct2(screen, x0, y0, x1, y1,color)
-                else:
+                else: #oct6
                     draw_oct2(screen, x1, y1, x0, y0,color)
         else:
             if (slope > -1):
                 if (x0 < x1):
                     draw_oct8(screen, x0, y0, x1, y1,color)
-                else:
+                else: #oct4
                     draw_oct8(screen, x1, y1, x0, y0,color)
             else:
                 if (x0 < x1):
                     draw_oct7(screen, x0, y0, x1, y1,color)
-                else:
+                else: #oct3
                     draw_oct7(screen, x1, y1, x0, y0,color)
 
 def draw_oct1(screen, x0, y0, x1, y1,color):
