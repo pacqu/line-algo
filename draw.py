@@ -7,7 +7,7 @@ def draw_line( screen, x0, y0, x1, y1, color ):
         draw_ver(screen, x0, y0, x1, y1,color)
     else:
         slope =  (y1 - y0)/( (x1 - x0) * 1.0)
-        print slope
+        #print slope
         if (slope > 0):
             if (slope < 1):
                 if (x0 < x1):
